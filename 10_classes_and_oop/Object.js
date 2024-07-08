@@ -1,14 +1,14 @@
-// function multipleBy5(num){
+function multipleBy5(num){
 
-//     return num*5
-// }
+    return num*5
+}
 
-// multipleBy5.power = 2 // a new property with the object associated with multipleBy5 
+multipleBy5.power = 2 // a new property with the object associated with multipleBy5 
 
-// console.log(multipleBy5(5)); 
-// console.log(multipleBy5.power);
-// console.log(multipleBy5) 
-// console.log(multipleBy5.prototype); // contains all the methods which can be worked upon multipleBy5. here in node environment -> none, but in window object there are several objects
+console.log(multipleBy5(5)); 
+console.log(multipleBy5.power);
+console.log(multipleBy5) 
+console.log(multipleBy5.prototype); // contains all the methods which can be worked upon multipleBy5. here in node environment -> none, but in window object there are several objects
 
 function createUser(username, score){
     this.username = username   // properties within the createUser function/obejct
