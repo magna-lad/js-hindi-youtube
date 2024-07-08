@@ -1,28 +1,32 @@
-function multipleBy5(num){
+// function multipleBy5(num){
 
-    return num*5
-}
+//     return num*5
+// }
 
-multipleBy5.power = 2
+// multipleBy5.power = 2 // a new property with the object associated with multipleBy5 
 
-console.log(multipleBy5(5));
-console.log(multipleBy5.power);
-console.log(multipleBy5.prototype);
+// console.log(multipleBy5(5)); 
+// console.log(multipleBy5.power);
+// console.log(multipleBy5) 
+// console.log(multipleBy5.prototype); // contains all the methods which can be worked upon multipleBy5. here in node environment -> none, but in window object there are several objects
 
 function createUser(username, score){
-    this.username = username
+    this.username = username   // properties within the createUser function/obejct
     this.score = score
 }
 
-createUser.prototype.increment = function(){
+createUser.prototype.increment = function(){  // a new function is added in the protoype
     this.score++
 }
-createUser.prototype.printMe = function(){
+createUser.prototype.printMe = function(){  // a new function is added in the protoype which can be used when a constructor (new) is used
     console.log(`price is ${this.score}`);
 }
+// prototype -> all methods regarding the current function/object is stored here
 
 const chai = new createUser("chai", 25)
 const tea = createUser("tea", 250)
+console.log(createUser);
+console.log(createUser.prototype)
 
 chai.printMe()
 
