@@ -36,7 +36,7 @@ function User(username, loginCount, isLoggedIn){ // a new function is defined wi
 
 
 // objects are like new worlds which we create upon definitions and give them parameters which makes them isable/unique
-// new-> constructor 
+// new-> constructor -> constructs a new instance/world of the object User
 const userOne = new User("hitesh", 12, true)
 const userTwo = new User("ChaiAurCode", 11, false)
 // console.log(userOne.constructor);
